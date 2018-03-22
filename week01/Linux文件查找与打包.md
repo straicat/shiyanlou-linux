@@ -11,6 +11,7 @@ find 路径 参数
 根据文件大小查找：
 
 `+n` 大于n；   `-n` 小于n；  `n` 等于n
+
 b/c/k/w/M/G: block/字节/k/字符数/M/G  注意大小写！
 
 ``` Bash
@@ -22,7 +23,9 @@ $ sudo find /etc -size +100k
 
 根据时间戳查找：
 
-a->access  c->change  m->modify
+* a->access
+* c->change
+* m->modify
 
 `-atime`, `-ctime`, `-mtime` 根据访问时间，状态改变时间，内容修改时间查找（单位：天；0表示24小时内）
 
