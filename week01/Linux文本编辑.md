@@ -106,3 +106,9 @@ $ vim file1 file2
 替换模式：`R`; `r` 替换游标所在字符
 
 开启选择模式（针对gui版vim）：`:set selectmode+=mouse`
+
+查看vim内置教程：
+
+``` Bash
+$ vimtutor
+```
