@@ -88,6 +88,8 @@ do
 done
 ```
 
+默认提示符为`#?`，可以通过`PS3`修改
+
 ``` Bash
 PS3="Please select: "
 select lan in Java Python Javascript
@@ -95,4 +97,14 @@ do
     echo $lan
 done
 ```
+
+---
+
+break：
+
+- `break` 退出循环
+- `break n` 退出第n层循环
+
+continue：跳出本次循环
+
 
