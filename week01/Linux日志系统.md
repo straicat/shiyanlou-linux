@@ -1,3 +1,5 @@
+# Linux日志系统
+
 日志文件位于：`/var/log`
 
 * `alternatives.log`记录系统的更新替代信息

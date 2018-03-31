@@ -1,3 +1,5 @@
+# Bash入门
+
 ``` Bash
 # 查看当前使用的shell
 $ echo $0
