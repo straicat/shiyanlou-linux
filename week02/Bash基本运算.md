@@ -100,9 +100,18 @@ $ [ -e /home -o -r /home ]
 
 ``` Bash
 # 使用bc做进制转换，把ibase进制转为obase进制
-$ echo "ibase=10;obase=2;11" | bc
+$ echo "obase=2;ibase=10;11" | bc
 # 将二进制转为十进制
 $ echo $((2#1011))
+```
+
+注意：使用`bc`进行进制转换时，最好先设置obase，再设置ibase。因为，当设置ibase后，输入bc的所有数字都使用该进制，包括用于设置obase的数字。
+
+``` Bash
+$ echo "obase=10;ibase=2;1100" | bc
+12
+$ echo "ibase=2;obase=10;1100" | bc
+1100
 ```
 
 随机数：
