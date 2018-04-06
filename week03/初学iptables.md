@@ -21,7 +21,7 @@ iptables [-t table] COMMAND chain CRETIRIA -j target
 |          |        |         |             | -m limit     | REDIRECT   |
 |          |        |         |             |    connlimit |            |
 |          |        |         |             |    state     |            |
------------------------------------------------------------------------
+-------------------------------------------------------------------------
 ``` 
 
 表：
@@ -80,7 +80,7 @@ NAT类型：
 |名称|全称|IP地址对应|
 |---|---|---|
 |静态NAT|static NAT|一对一|
-|动态NAT|dynamic NAT或pooled NAT|
+|动态NAT|dynamic NAT或pooled NAT|多对多|
 |NAPT|Network Address Port Translation|多对一|
 
 ```
