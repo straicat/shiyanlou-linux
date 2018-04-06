@@ -38,4 +38,21 @@ action：
 
 |参数|含义|
 |---|---|
+|`%a`|客户端的 IP 地址|
+|`%A`|服务端的 IP 地址|
+|`%d`|守护进程的名字|
+|`%h`|客户端的主机名|
+|`%H`|服务端的主机名|
+|`%p`|守护进程的 pid|
+|`%u`|客户端的用户名|
 
+【配置示例】
+
+- 只允许192.168.0.0/16子网和本地访问Xvnc
+- 其他IP地址访问Xvnc时，会记录访问信息到日志/var/log/vncdeny.log，并拒绝访问
+```
+# /etc/hosts.allow
+Xvnc: 192.168.0.0/16， LOCAL
+# /etc/hosts.deny
+Xvnc: ALL : spawn (/bin/echo %a from %h attempted to access %d >> /var/log/vncdeny.log) &
+```
