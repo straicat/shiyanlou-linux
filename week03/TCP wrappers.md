@@ -56,3 +56,10 @@ Xvnc: 192.168.0.0/16， LOCAL
 # /etc/hosts.deny
 Xvnc: ALL : spawn (/bin/echo %a from %h attempted to access %d >> /var/log/vncdeny.log) &
 ```
+
+---
+
+【参考】
+
+- `man hosts_access`
+- `man hosts_options`
