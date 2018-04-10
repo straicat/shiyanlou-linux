@@ -52,7 +52,7 @@ action：
 - 其他IP地址访问Xvnc时，会记录访问信息到日志/var/log/vncdeny.log，并拒绝访问
 ```
 # /etc/hosts.allow
-Xvnc: 192.168.0.0/16， LOCAL
+Xvnc: 192.168.0.0/16, LOCAL
 # /etc/hosts.deny
 Xvnc: ALL : spawn (/bin/echo %a from %h attempted to access %d >> /var/log/vncdeny.log) &
 ```
