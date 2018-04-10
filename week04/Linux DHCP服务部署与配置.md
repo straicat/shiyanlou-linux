@@ -54,7 +54,3 @@ iface eth0 inet dhcp
 ```
 
 然后重启网络服务（`networking`）生效。
-
-
-```
-
