@@ -35,7 +35,7 @@
 
 ## 第3周 Linux防火墙与安全
 
-- [TCP/IP 简介](week03/TCP/IP简介.md)
+- [TCP/IP 简介](week03/TCP_IP简介.md)
 - [Socket 简介](week03/Socket简介.md)
 - [网络常用命令](week03/网络常用命令.md)
 - [防火墙介绍](week03/防火墙介绍.md)
