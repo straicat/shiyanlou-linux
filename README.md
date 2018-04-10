@@ -39,7 +39,7 @@
 - [Socket 简介](week03/Socket简介.md)
 - [网络常用命令](week03/网络常用命令.md)
 - [防火墙介绍](week03/防火墙介绍.md)
-- [TCP wrappers](week03/TCP%20wrappers.md)
+- [TCP wrappers](week03/TCP_wrappers.md)
 - [初学 iptables](week03/初学iptables.md)
 - [iptables 攻击防御](week03/iptables攻击防御.md)
 - [iptables 脚本实例](week03/iptables脚本实例.md)
@@ -49,7 +49,7 @@
 
 ## 第4周 Linux网络服务部署
 
-- [Linux DHCP 服务部署与配置](week04/Linux%20DHCP服务部署与配置.md)
+- [Linux DHCP 服务部署与配置](week04/Linux_DHCP服务部署与配置.md)
 - [Linux DNS 服务部署与配置](week04/LinuxDNS服务部署与配置.md)
 - [Linux FTP 服务部署与配置](week04/LinuxFTP服务部署与配置.md)
 - [Linux Samba 服务部署与配置](week04/LinuxSamba服务部署与配置.md)
