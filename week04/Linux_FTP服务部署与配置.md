@@ -48,7 +48,7 @@ idle_session_timeout=300
 # 允许访客登录
 guest_enable=YES
 # 访客用户用户名（默认：ftp）
-guest_username=ftp
+guest_username=ftp_vuser
 # 用户主目录可写
 allow_writeable_chroot=YES
 # 允许本地用户登录
@@ -77,7 +77,7 @@ userlist_deny=YES
 
 vsftpd同时监听ipv4和ipv6：
 
-```
+``` Bash
 # 使用两个配置文件
 $ sudo cp /etc/vsftpd/vsftpd.conf /etc/vsftpd/vsftpd_ipv6.conf
 # 两个配置文件分别设置listen=YES和listen_ipv6=YES
@@ -87,7 +87,7 @@ $ sudo systemctl start vsftpd.target
 
 FTP命令：
 
-```
+``` Bash
 # 下载单个文件
 ftp> get test.txt
 # 多文件下载
@@ -98,4 +98,10 @@ ftp> prompt off
 ftp> put upload.txt
 # 执行Shell命令（前面加!）
 ftp> !ls
+```
+
+虚拟用户配置：
+
+``` Bash
+
 ```
