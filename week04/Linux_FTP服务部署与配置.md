@@ -73,6 +73,14 @@ chroot_list_file=/path/to/chroot/list/file
 # 用户访问控制，可以设置/etc/vsftpd/user_list里的用户能否登录
 userlist_enable=YES
 userlist_deny=YES
+
+# 日志记录
+# 上传和下载记录
+xferlog_enable=YES
+xferlog_file=/var/log/xferlog
+# 服务器传输情况记录
+dual_log_enable=YES
+vsftpd_log_file=/var/log/vsftpd.log
 ```
 
 vsftpd同时监听ipv4和ipv6：
@@ -103,5 +111,62 @@ ftp> !ls
 虚拟用户配置：
 
 ``` Bash
-
+# 创建访客用户
+$ sudo useradd -d /home/ftp_vuser -s /sbin/nologin ftp_vuser
+# 设置访客家目录权限
+$ sudo chmod o+x /home/ftp_vuser
+# 生成虚拟用户口令
+$ sudo tee /etc/vsftpd/vuser.txt << EOF                            [19:17:06]
+lou
+loupass
+linux
+linuxpass
+EOF
+# 生成认证文件
+$ sudo db_load -T -t hash -f /etc/vsftpd/vuser.txt /etc/vsftpd/vuser.db
+# 修改db权限
+$ sudo chmod 600 /etc/vsftpd/vuser.db
+# 添加认证
+$ sudo tee /etc/pam.d/vsftpd.virtual << EOF
+auth required pam_userdb.so db=/etc/vsftpd/vuser
+account required pam_userdb.so db=/etc/vsftpd/vuser
+EOF
+# 在vsftpd.conf中指定pam认证文件
+$ echo pam_service_name=vsftpd.virtual | sudo tee -a /etc/vsftpd/vsftpd.conf
 ```
+
+限制实体用户登录FTP：
+
+- /etc/vsftpd/ftpusers 禁止用户登录
+- /etc/vsftpd/user_list  设置用户是否能登录（需在vsftpd.conf中配置）
+
+ftpusers的优先级比user_list高
+
+---
+
+常见报错：
+
+- 500 OOPS: run two copies of vsftpd for IPv4 and IPv6
+    - 在同一个vsftpd的配置文件中同时设置了`listen=YES`和`listen_ipv6=YES`
+- ftp:connect to address ::1: connection refused
+    - 注释掉/etc/hosts文件中`::1`开头的行即可
+- permission denied
+    - 没有相应的FTP权限；下载的目录没有权限
+- 530 this ftp server is anonymous only
+    - vsftpd默认不允许本地用户登录。配置`local_enable=YES`
+- 500 oops and 421 service
+    - vsftpd默认根目录不可写。配置`allow_writeable_chroot=YES`
+- 226 transfer done(but fail to open directory)
+    - 虚拟帐号没有访客用户家目录的访问权限。`$ sudo chmod o+x /home/<guest用户>`
+
+FTP数字状态：
+
+- 220 已就绪
+- 331 需要输入密码
+- 230 已登入
+- 227 被动模式
+- 159 文件状态正确，正在打开数据连接
+- 226 正在关闭数据连接，请求文件动作成功结束
+- 221 关闭连接
+
+
