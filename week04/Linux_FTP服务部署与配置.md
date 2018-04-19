@@ -116,7 +116,7 @@ $ sudo useradd -d /home/ftp_vuser -s /sbin/nologin ftp_vuser
 # 设置访客家目录权限
 $ sudo chmod o+x /home/ftp_vuser
 # 生成虚拟用户口令
-$ sudo tee /etc/vsftpd/vuser.txt << EOF                            [19:17:06]
+$ sudo tee /etc/vsftpd/vuser.txt << EOF
 lou
 loupass
 linux
