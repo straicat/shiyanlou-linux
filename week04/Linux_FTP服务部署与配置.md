@@ -83,6 +83,8 @@ dual_log_enable=YES
 vsftpd_log_file=/var/log/vsftpd.log
 ```
 
+每次修改配置后都要重启服务生效。
+
 vsftpd同时监听ipv4和ipv6：
 
 ``` Bash
