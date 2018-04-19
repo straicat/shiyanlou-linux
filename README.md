@@ -51,7 +51,7 @@
 
 - [Linux DHCP 服务部署与配置](week04/Linux_DHCP服务部署与配置.md)
 - [Linux DNS 服务部署与配置](week04/LinuxDNS服务部署与配置.md)
-- [Linux FTP 服务部署与配置](week04/LinuxFTP服务部署与配置.md)
+- [Linux FTP 服务部署与配置](week04/Linux_FTP服务部署与配置.md)
 - [Linux Samba 服务部署与配置](week04/LinuxSamba服务部署与配置.md)
 - [Linux 邮件服务部署与配置](week04/Linux邮件服务部署与配置.md)
 - [Linux VPN 服务部署与配置](week04/LinuxVPN服务部署与配置.md)
