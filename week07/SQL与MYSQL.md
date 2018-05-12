@@ -1,13 +1,13 @@
-# SQLÓëMYSQL
+# SQLä¸ŽMYSQL
 
-²é¿´mysqldºÍmysqlµÄËùÓÐ¿ÉÅäÖÃÏî£º
+æŸ¥çœ‹mysqldå’Œmysqlçš„æ‰€æœ‰å¯é…ç½®é¡¹ï¼š
 
 ``` Bash
 $ mysqld --verbose --help
 $ mysql --help
 ```
 
-ÅäÖÃÎÄ¼þ£º`/etc/mysql/my.cnf`£¬ÓëËùÓÐ¿ÉÅäÖÃÏî¶ÔÓ¦¡£
+é…ç½®æ–‡ä»¶ï¼š`/etc/mysql/my.cnf`ï¼Œä¸Žæ‰€æœ‰å¯é…ç½®é¡¹å¯¹åº”ã€‚
 
-ÔÚmysqlÖÐ¿ÉÒÔÊ¹ÓÃ`SET`ÃüÁîÀ´ÁÙÊ±ÐÞ¸ÄÅäÖÃ¡£
+åœ¨mysqlä¸­å¯ä»¥ä½¿ç”¨`SET`å‘½ä»¤æ¥ä¸´æ—¶ä¿®æ”¹é…ç½®ã€‚
 
