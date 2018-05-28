@@ -1,0 +1,19 @@
+language: python
+python: 
+  - "3.5"
+install:
+  - pip install mkdocs
+  - pip install python-markdown-math
+script:
+  - mkdocs build --clean
+  - mkdocs build
+after_success:  |
+  if [ -n "$REPO_TOKEN" ]; then
+    cd "$TRAVIS_BUILD_DIR"
+    cd site
+    git init
+    git add .
+    git -c user.name=$GITHUB_NAME -c user.email=$GITHUB_EMAIL commit -m "Auto Deployment"
+    git push -f -q https://$GITHUB_NAME:$REPO_TOKEN@$REPO master:gh-pages
+    cd "$TRAVIS_BUILD_DIR"
+  fi
