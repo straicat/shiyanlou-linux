@@ -142,9 +142,9 @@ pages:
         # - '使用 Saltstack 部署 Apache': 'week10/使用Saltstack部署Apache.md'
         # - 'Supervisor 安装与配置': 'week10/Supervisor安装与配置.md'
         # - '让 Supervisord 监管 apache2': 'week10/让Supervisord监管apache2.md'
-    # - Devops实践: 
+    - Devops实践: 
         # - 'Docker 概念与安装': 'week11/Docker概念与安装.md'
-        # - 'Docker 容器与镜像管理': 'week11/Docker容器与镜像管理.md'
+        - 'Docker 容器与镜像管理': 'week11/Docker容器与镜像管理.md'
         # - '通过 Docker 运行一个 MySQL 服务': 'week11/通过Docker运行一个MySQL服务.md'
         # - 'Docker 存储与网络': 'week11/Docker存储与网络.md'
         # - '通过 iptables 更新容器端口映射': 'week11/通过iptables更新容器端口映射.md'
