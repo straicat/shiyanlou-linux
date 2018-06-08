@@ -17,6 +17,7 @@ docker的命令分为Management Commands和Commands。Commands是一些顶级命
 - `--rm` 退出容器时自动删除
 - `-p 主机端口:容器端口` 将容器的端口映射到主机
 - `-v` 指定数据卷
+- `--env-file 配置文件路径` 使用指定的配置文件运行
 
 退出容器：
 
