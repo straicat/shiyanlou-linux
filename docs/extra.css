@@ -1,6 +1,6 @@
 .rst-content a, .rst-content a:visited {color: #42b983; font-weight: 600;}
 code, pre code {background-color: rgba(255, 255, 255, 0.6); font-size: 16px; border: none;}
-.wy-nav-content-wrap {background: url("https://img-1256819794.cos.ap-beijing.myqcloud.com/flower.jpg") repeat fixed;}
+.wy-body-for-nav {background: url("https://img-1256819794.cos.ap-beijing.myqcloud.com/flower.jpg") repeat fixed;}
 .wy-nav-content {max-width: 1000px; background-color: rgba(255, 255, 255, 0.8);}
 .wy-side-nav-search {background-color: #343131;}
 .wy-table-bordered-all td, .rst-content table.docutils td {background-color: #f3f6f6;}
