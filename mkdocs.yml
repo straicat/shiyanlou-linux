@@ -1,4 +1,4 @@
-site_name: 《Linux运维与DevOps实战》学习笔记
+site_name: Linux运维与DevOps实战_学习笔记
 repo_url: https://github.com/jlice/shiyanlou-linux
 site_description: 《Linux运维与DevOps实战》学习笔记
 site_author: 文剑木然
@@ -107,8 +107,8 @@ pages:
         # - 'Redis 简介与安装': 'week07/Redis简介与安装.md'
         # - 'Redis 数据类型': 'week07/Redis数据类型.md'
         # - 'Redis 常用配置应用': 'week07/Redis常用配置应用.md'
-    # - Linux集群运维: 
-        # - 'LVS 简介': 'week08/LVS简介.md'
+    - Linux集群运维: 
+        - 'LVS 简介': 'week08/LVS简介.md'
         # - 'LVS 实战': 'week08/LVS实战.md'
         # - '创建高可用的实验楼': 'week08/创建高可用的实验楼.md'
         # - 'Keepalived 原理与工作机制': 'week08/Keepalived原理与工作机制.md'
