@@ -1,15 +1,17 @@
-site_name: 《Linux运维与DevOps实战》 == 学习笔记 ==
+site_name: 《Linux运维与DevOps实战》学习笔记
 repo_url: https://github.com/jlice/shiyanlou-linux
 site_description: 《Linux运维与DevOps实战》学习笔记
 site_author: 文剑木然
 
-extra_javascript: 
-    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+# extra_javascript: 
+#     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-markdown_extensions:
-    - mdx_math
+# markdown_extensions:
+#     - mdx_math
 
-theme: readthedocs
+theme: 
+    name: material
+    font: false
 extra_css: 
     - extra.css
     
