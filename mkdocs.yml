@@ -188,8 +188,8 @@ pages:
         # - '使用 Metasploit 攻击 IE 浏览器漏洞': 'week13/使用Metasploit攻击IE浏览器漏洞.md'
         # - 'WebShell 访问后门': 'week13/WebShell访问后门.md'
         # - '如何避免 Web 安全漏洞': 'week13/如何避免Web安全漏洞.md'
-    # - 服务器安全实战: 
-        # - 'Kali 实验环境介绍与使用': 'week14/Kali实验环境介绍与使用.md'
+    - 服务器安全实战: 
+        - 'Kali 实验环境介绍与使用': 'week14/Kali实验环境介绍与使用.md'
         # - '一次简单的渗透测试实战': 'week14/一次简单的渗透测试实战.md'
         # - '使用多种安全工具获取目标主机信息': 'week14/使用多种安全工具获取目标主机信息.md'
         # - 'Metasploit 基础知识和使用': 'week14/Metasploit基础知识和使用.md'
