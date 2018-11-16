@@ -1,0 +1,10 @@
+.md-footer-meta {display: none;}
+.md-footer {height: 0}
+.md-nav__title {display: none;}
+.md-source__facts {display: none;}
+.md-header {background-color: rgba(0,0,0,.87);}
+.md-search__form {background-color: #666}
+code {font-family: Monaco, Consolas, Courier New,Courier,monospace;}
+.md-typeset code, .md-typeset pre {font-size: 100%;}
+.md-footer-nav__link {padding-top: 0.8rem; padding-bottom: 0;}
+.md-nav__link--active, .md-nav__link:active, .md-nav__link:focus, .md-nav__link:hover {color: #209e85;}
