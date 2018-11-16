@@ -118,8 +118,8 @@ pages:
         # - '模块拆分，请求分发': 'week08/模块拆分，请求分发.md'
         # - 'Squid 搭建代理服务器': 'week08/Squid搭建代理服务器.md'
         # - '为非会员用户开放源地址': 'week08/为非会员用户开放源地址.md'
-    # - Web服务运维: 
-        # - 'Apache 配置入门': 'week09/Apache配置入门.md'
+    - Web服务运维: 
+        - 'Apache 配置入门': 'week09/Apache配置入门.md'
         # - '测试新项目': 'week09/测试新项目.md'
         # - 'Nginx 配置入门': 'week09/Nginx配置入门.md'
         # - '让实验楼网站恢复访问': 'week09/让实验楼网站恢复访问.md'
