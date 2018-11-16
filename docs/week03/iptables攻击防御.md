@@ -38,7 +38,7 @@ $ ab -n 10000000 -c 600 http://localhost/
 # 查看SYN连接数
 $ netstat -an | grep SYN
 # 增加iptables进行防范
-# 对SYN限制美妙最多1个连接，接收第三个数据包时触发
+# 对SYN限制每秒最多1个连接，接收第三个数据包时触发
 $ sudo iptables -A INPUT -p tcp --syn -m limit --limit 1/s --limit-burst 3 -j ACCEPT
 # 或者设置每个客户端并发数
 $ sudo iptables -A INPUT -p tcp --syn --dport 80 -m connlimit --connlimit-above 20 -j REJECT
