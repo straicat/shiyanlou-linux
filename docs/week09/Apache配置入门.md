@@ -24,7 +24,7 @@ $ sudo service apache2 reload
 
 【主配置文件】
 
-\<Directory\>：配置某目录的访问
+<Directory\>：配置某目录的访问
 
 - Indexes: 若没有index.html则展示文件列表
 - FollowSymLinks: 允许读取目录中的符号链接
@@ -45,7 +45,7 @@ $ sudo service apache2 reload
 
 【站点配置】
 
-所有站点信息都是通过\<VirtualHost\>来包含，配置多个\<VirtualHost\>即可创建多个虚拟主机，访问多个虚拟主机可以通过这样的方式来区分：
+所有站点信息都是通过<VirtualHost\>来包含，配置多个<VirtualHost\>即可创建多个虚拟主机，访问多个虚拟主机可以通过这样的方式来区分：
 
 - IP地址
 - 监听的端口号
@@ -71,7 +71,7 @@ envvars的`APACHE_RUN_*`配置了Apache运行的用户、用户组、主目录�
 
 Apache自带的用户认证：
 
-安装`apache2-utils`，使用`htpasswd`创建密码文件，在`apache2.conf`的\<Directory\>配置AuthType、AuthUserFile等信息：
+安装`apache2-utils`，使用`htpasswd`创建密码文件，在`apache2.conf`的<Directory\>配置AuthType、AuthUserFile等信息：
 
 ```
 <Directory /var/www/>
